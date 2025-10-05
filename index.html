@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие сайты со шрифтами</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .sites-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .site-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .site-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+        }
+
+        .site-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .site-description {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .site-link {
+            display: inline-block;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .site-link:hover {
+            background: linear-gradient(45deg, #764ba2, #667eea);
+            transform: scale(1.05);
+        }
+
+        .features {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+        }
+
+        .features h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .sites-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Лучшие сайты со шрифтами</h1>
+            <p class="subtitle">Подборка лучших ресурсов для поиска и использования шрифтов в ваших проектах</p>
+        </header>
+
+        <div class="sites-grid">
+            <!-- Google Fonts -->
+            <div class="site-card">
+                <div class="site-name">Google Fonts</div>
+                <div class="site-description">
+                    Бесплатная коллекция шрифтов с открытым исходным кодом. Легкая интеграция через CSS. Идеально для веб-проектов.
+                </div>
+                <a href="https://fonts.google.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+
+            <!-- Fonts.com -->
+            <div class="site-card">
+                <div class="site-name">Fonts.com</div>
+                <div class="site-description">
+                    Огромная библиотека шрифтов от Monotype. Есть как бесплатные, так и премиум варианты. Профессиональный выбор.
+                </div>
+                <a href="https://www.fonts.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+
+            <!-- Adobe Fonts -->
+            <div class="site-card">
+                <div class="site-name">Adobe Fonts</div>
+                <div class="site-description">
+                    Премиум-сервис от Adobe с тысячами высококачественных шрифтов. Входит в подписку Creative Cloud.
+                </div>
+                <a href="https://fonts.adobe.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+
+            <!-- Font Squirrel -->
+            <div class="site-card">
+                <div class="site-name">Font Squirrel</div>
+                <div class="site-description">
+                    Бесплатные шрифты коммерческого качества. Отличный ресурс для коммерческих проектов без бюджета на шрифты.
+                </div>
+                <a href="https://www.fontsquirrel.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+
+            <!-- DaFont -->
+            <div class="site-card">
+                <div class="site-name">DaFont</div>
+                <div class="site-description">
+                    Большая коллекция бесплатных шрифтов, отсортированных по стилям. Много декоративных и тематических шрифтов.
+                </div>
+                <a href="https://www.dafont.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+
+            <!-- FontSpace -->
+            <div class="site-card">
+                <div class="site-name">FontSpace</div>
+                <div class="site-description">
+                    Бесплатные шрифты от независимых дизайнеров. Удобный поиск и категоризация. Более 80,000 шрифтов.
+                </div>
+                <a href="https://www.fontspace.com" class="site-link" target="_blank">Перейти на сайт</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <h2>💡 Почему эти сайты лучшие?</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Большой выбор</h3>
+                    <p>Тысячи шрифтов различных стилей и категорий</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">💸</div>
+                    <h3>Бесплатные варианты</h3>
+                    <p>Многие ресурсы предлагают качественные бесплатные шрифты</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Легкая интеграция</h3>
+                    <p>Простое подключение через CSS или загрузка файлов</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Поиск и фильтры</h3>
+                    <p>Удобный поиск по стилям, категориям и характеристикам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Подборка лучших сайтов со шрифтами. Используйте для своих проектов!</p>
+    </footer>
+</body>
+</html>
